@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.my-swiper .swiper-button-next:after {
+  font-size: 12px;
+  color: white;
+}
+
+.my-swiper .swiper-button-prev:after {
+  font-size: 12px;
+  color: white;
+}
+
+.my-swiper .swiper-button-prev{
+  border-radius: 50%;
+  background-color: gray;
+  padding: 23px;
+}
+
+.my-swiper .swiper-button-next{
+  border-radius: 50%;
+  background-color: gray;
+  padding: 23px;
+}
+
+.my-swiper .swiper-pagination{
+  position:static;
+}
+
+.my-swiper .swiper-pagination-bullet-active{
+  background-color: gray;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+.no-scrollbar-dropDown {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+.no-scrollbar2-dropDown::-webkit-scrollbar {
+  width: 5px; 
+}
+
+.no-scrollbar2-dropDown::-webkit-scrollbar-thumb {
+  background-color: #bbbaba; 
+  border-radius: 5px; 
+}
+
+.no-scrollbar-text-area textarea::-webkit-scrollbar {
+  width: 10px; 
+}
+
+.no-scrollbar-text-area textarea::-webkit-scrollbar-thumb {
+  background-color: #bbbaba; 
+  border-radius: 5px; 
+}
